@@ -1,0 +1,55 @@
+{
+  "name": "cyr_crawler",
+  "version": "0.0.0",
+  "author": "tom lee @xu3cl40122",
+  "bin": {
+    "cyr_crawler": "./bin/run"
+  },
+  "bugs": "https://github.com/xu3cl40122/cyr_crawler/issues",
+  "dependencies": {
+    "@oclif/command": "^1",
+    "@oclif/config": "^1",
+    "@oclif/plugin-help": "^3",
+    "crawler": "^1.3.0",
+    "tslib": "^1"
+  },
+  "devDependencies": {
+    "@oclif/dev-cli": "^1",
+    "@types/crawler": "^1.2.1",
+    "@types/node": "^10",
+    "globby": "^10",
+    "rimraf": "^3.0.2",
+    "ts-node": "^8",
+    "typescript": "^3.3"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "files": [
+    "/bin",
+    "/lib",
+    "/npm-shrinkwrap.json",
+    "/oclif.manifest.json"
+  ],
+  "homepage": "https://github.com/xu3cl40122/cyr_crawler",
+  "keywords": [
+    "oclif"
+  ],
+  "license": "MIT",
+  "main": "lib/index.js",
+  "oclif": {
+    "commands": "./lib/commands",
+    "bin": "cyr_crawler",
+    "plugins": [
+      "@oclif/plugin-help"
+    ]
+  },
+  "repository": "xu3cl40122/cyr_crawler",
+  "scripts": {
+    "postpack": "rimraf oclif.manifest.json",
+    "prepack": "rimraf lib && tsc -b && oclif-dev manifest && oclif-dev readme",
+    "test": "echo NO TESTS",
+    "version": "oclif-dev readme && git add README.md"
+  },
+  "types": "lib/index.d.ts"
+}
