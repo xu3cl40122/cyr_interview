@@ -2,6 +2,7 @@
 ## cli 
 * 採用 oclif 這個 Node.js 的 cli framework，也有支援 TypeScript，如果要新增其他 command 只要在 `src/commands/` 下增加對應的 js 即可
 * 爬蟲部分用 crawler 處理
+* 在 Node.js v12.16.1 環境下開發測試
 
 ### 如何跑起來
 因為只是作業等級的 cli 就沒有發佈到 npm 上面了
